@@ -15,58 +15,70 @@
     <title>TacoApp</title>
 </head>
 
+<style>
+    html{
+        cursor: url('https://i.imgur.com/1EFDB1H.jpg'), auto;
+    }
+</style> 
+
 <body>
     <!--CREATION OF NAVBAR INCLUDING ANCHOR TAGS-->
-    <nav class="navbar">
-        <ul>
+    <nav class="navbar nav-wrapper teal">
+        <a href="#" class="brand-logo">Taco App</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down ulFontColor" >
             <li>
                 <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
             </li>
             <li>
                 <a href="#locate">Locate</a>
             </li>
             <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
                 <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-facebook"></a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-twitter"></a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-instagram"></a>
             </li>
         </ul>
     </nav>
 
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#locate">Locate</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
         <!--HEADER SECTION-->
         <header>
-            <h1 class="head">Taco App</h1>
-                <div class="social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                </div>
-        </header>
-
+            <!--- <h1 class="head">Taco App</h1> --->
+                <div class="motto">
+                    <!-- <p class="deep-purple lighten-2 center-align">Find the closest and best Tacos</p> -->
     <!--HOME SECTION-->
     <section id="home">
-        <div class="wrapper">
-            <h3 class="intro">Are you looking for the best Tacos in your area? <br> Look no further!</h3>
+        <div class="wrapper container center-align purple-text text-lighten-2 z-depth-9">
+            <h3 class="intro">find the best tacos near you</h3>
         </div>
     </section>
 
-    <!--ABOUT SECTION-->
-    <section id="about">
-        <div class="wrapper">
-            <p>
-                Our Mission is to find the highest rated Tacos in your area, we do the research so you dont have too
-            </p>
-        </div>
-    </section>
+
 
     <!--LOCATE SECTION-->
     <section id="locate">
-        <div class="wrapper">
-            <button type="button">Tacos!</button>
+        <div class="wrapper center-align">
             <form action="" class="form">
-                <input type="text" name="zipcode" class="input" placeholder="Enter your zipcode.">
+                <input type="text" name="zipcode" class="input center-align" placeholder="Enter your zipcode.">
             </form>
+            <button type="button">Tacos!</button><br>
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.999568000612!2d-117.74845968479525!3d33.65717308071515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdd57ca7f89e5%3A0x372155cce4ef7192!2sTaco%20Bell%20HQ!5e0!3m2!1sen!2sus!4v1655667159945!5m2!1sen!2sus" 
             width="600" 
             height="450" 
@@ -78,9 +90,18 @@
         </div>
     </section>
 
+     <!--ABOUT SECTION-->
+     <section id="about">
+        <div class="wrapper contact center-align">
+            <p>
+                Our Mission is to find the highest rated Tacos in your area, we do the research so you dont have too
+            </p>
+        </div>
+    </section>
+
     <!--CONTACT SECTION-->
     <section id="contact">
-        <div class="wrapper">
+        <div class="wrapper center-align">
             <div>
                 <h4>
                     Any questions or concerns?
@@ -111,7 +132,7 @@
 
     <!--FOOTER SECTION-->
     <footer>
-        <div class="wrapper">
+        <div class="wrapper center-align">
             <h3>Puckwudgie-2</h3>
         </div>
     </footer>
