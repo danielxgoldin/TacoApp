@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="jquery-3.6.0.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TacoApp</title>
@@ -63,16 +62,16 @@
             <form action="" class="form">
                 <input type="text" name="zipcode" class="input" placeholder="Enter your zipcode.">
             </form>
-            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.999568000612!2d-117.74845968479525!3d33.65717308071515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdd57ca7f89e5%3A0x372155cce4ef7192!2sTaco%20Bell%20HQ!5e0!3m2!1sen!2sus!4v1655667159945!5m2!1sen!2sus" 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-           </iframe>
         </div>
+        <div id="map" 
+        style=" width:'600px'; height:'100%' ; overflow: visible;"    
+        >
+     </div>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFAQRYz5TBv2KbMf9IoBqY4s5830ytLUE&libraries=places&callback=createMap" async defer></script>
+
     </section>
+   
+
 
     <!--CONTACT SECTION-->
     <section id="contact">
@@ -112,5 +111,6 @@
         </div>
     </footer>
     <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
