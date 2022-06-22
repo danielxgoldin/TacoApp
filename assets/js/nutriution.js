@@ -1,8 +1,3 @@
-
-
-
-
-  // Brendon
   var appKey = "9b50da828a1dfe82773e9e4c27d62609";
   var appId = "50ec7bea";
   var urlID =
@@ -22,12 +17,19 @@
         {
             console.log("name: "+ response.hits[i].recipe.label)
             console.log(response.hits[i].recipe.source)
-            var ul=document.getElementById(receipe)
+            var ul=document.getElementById("receipe")
             var li=document.createElement("li")
             var a=document.createElement("a")
             a.setAttribute("href",response.hits[i].recipe.url)
-            var h2=document.createElement("h2")
-            response.hits[i].recipe.source
+            a.innerText="Click here for receipe"
+            var h2=document.createElement("h5")
+            h2.innerText=response.hits[i].recipe.label
+            var p=document.createElement("p")
+            p.innerText=response.hits[i].recipe.source
+            li.append(h2)
+            li.append(a)
+            li.append(p)
+            ul.append(li)
         }
 
     
@@ -41,6 +43,10 @@
       dataType: "json",
     }).then(function (response) {
       console.log(response)
+      for (let i = 0; i < response.hits.length; i++)
+      {
+        
+      }
      
  
     })
