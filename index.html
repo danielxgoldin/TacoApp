@@ -2,80 +2,106 @@
 <html lang="en">
 <!--HEAD SECTION HOUSING HTML TAGS AND STYLE SHEET-->
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TacoApp</title>
 </head>
 
+<style>
+    html{
+        cursor: url('https://i.imgur.com/1EFDB1H.jpg'), auto;
+    }
+</style> 
+
 <body>
     <!--CREATION OF NAVBAR INCLUDING ANCHOR TAGS-->
-    <nav class="navbar">
-        <ul>
+    <nav class="navbar nav-wrapper teal">
+        <a href="#" class="brand-logo">Taco App</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down ulFontColor" >
             <li>
                 <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
             </li>
             <li>
                 <a href="#locate">Locate</a>
             </li>
             <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
                 <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-facebook"></a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-twitter"></a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-instagram"></a>
             </li>
         </ul>
     </nav>
 
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#locate">Locate</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
         <!--HEADER SECTION-->
         <header>
-            <h1 class="head">Taco App</h1>
-                <div class="social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                </div>
-        </header>
-
+            <!--- <h1 class="head">Taco App</h1> --->
+                <div class="motto">
+                    <!-- <p class="deep-purple lighten-2 center-align">Find the closest and best Tacos</p> -->
     <!--HOME SECTION-->
     <section id="home">
-        <div class="wrapper">
-            <h3 class="intro">Are you looking for the best Tacos in your area? <br> Look no further!</h3>
+        <div class="wrapper container center-align purple-text text-lighten-2 z-depth-9">
+            <h3 class="intro">find the best tacos near you</h3>
         </div>
     </section>
 
-    <!--ABOUT SECTION-->
-    <section id="about">
-        <div class="wrapper">
+
+
+    <!--LOCATE SECTION-->
+    <section id="locate">
+        <div class="wrapper center-align">
+            <form action="" class="form">
+                <input type="text" name="zipcode" class="input center-align" placeholder="Enter your zipcode.">
+            </form>
+            <button type="button">Tacos!</button><br>
+            
+           
+           <div id="map" 
+           style=" width:'600px'; height:'100%' ; overflow: visible;"    
+           >
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFAQRYz5TBv2KbMf9IoBqY4s5830ytLUE&libraries=places&callback=createMap" async defer></script>
+   
+        </div>
+    </section>
+
+     <!--ABOUT SECTION-->
+     <section id="about">
+        <div class="wrapper contact center-align">
             <p>
                 Our Mission is to find the highest rated Tacos in your area, we do the research so you dont have too
             </p>
         </div>
     </section>
 
-    <!--LOCATE SECTION-->
-    <section id="locate">
-        <div class="wrapper">
-            <button type="button">Tacos!</button>
-            <form action="" class="form">
-                <input type="text" name="zipcode" class="input" placeholder="Enter your zipcode.">
-            </form>
-        </div>
-        <div id="map" 
-        style=" width:'600px'; height:'100%' ; overflow: visible;"    
-        >
-     </div>
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFAQRYz5TBv2KbMf9IoBqY4s5830ytLUE&libraries=places&callback=createMap" async defer></script>
-
-    </section>
-   
-
-
     <!--CONTACT SECTION-->
     <section id="contact">
-        <div class="wrapper">
+        <div class="wrapper center-align">
             <div>
                 <h4>
                     Any questions or concerns?
@@ -106,11 +132,11 @@
 
     <!--FOOTER SECTION-->
     <footer>
-        <div class="wrapper">
+        <div class="wrapper center-align">
             <h3>Puckwudgie-2</h3>
         </div>
     </footer>
     <script src="./assets/js/script.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

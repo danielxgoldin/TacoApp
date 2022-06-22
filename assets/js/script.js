@@ -16,20 +16,21 @@ $(document).ready(function () {
           window.initMap = initMap();
         });*/
         var map;
-
+var infowindow;
         function createMap() {
           map = new google.maps.Map(document.getElementById('map'), {
             center: {
-              lat: 40.0519752,
-              lng: -76.314270999999
+              lat: 29.749907,
+              lng: -95.358421
             },
             zoom: 10
           });
         
           var request = {
-            location: map.getCenter(),
+            location:map.getCenter(),
             radius: 8047,
-            types: ['tacos']
+            types: ['restaurant'],
+            query: 'Tacos'
           }
         
           var service = new google.maps.places.PlacesService(map);
@@ -53,4 +54,5 @@ $(document).ready(function () {
             position: place.geometry.location,
             title: place.name
           })
+        
         }
