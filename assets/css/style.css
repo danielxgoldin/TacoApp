@@ -1,0 +1,35 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://i.imgur.com/eBxcX8Y.jpg");
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro {
+    font-size: 65px;
+    font-style: italic;
+    color: ##9d86e3;
+background: transparent;
+text-shadow: 4px 4px 12px rgba(157,134,227,0.6);
+}
+
+
+.transparentBG {
+    background-color: #e37259;
+  }
+
+.ulFontColor {
+    color: #e37259;
+}
+
+
+#contact, #about {
+    font-size: 35px;
+    font-style: italic;
+    color: #e37259;
+background: transparent;
+text-shadow: 4px 4px 12px rgba(157,134,227,0.6);
+}
