@@ -33,3 +33,11 @@ text-shadow: 4px 4px 12px rgba(157,134,227,0.6);
 background: transparent;
 text-shadow: 4px 4px 12px rgba(157,134,227,0.6);
 }
+
+#map {
+    align-items: center;
+    height: 400px;
+    width: 600px;
+    border: 1px solid #333;
+    margin-top: 0.6em;
+  }

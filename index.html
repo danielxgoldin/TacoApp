@@ -72,7 +72,7 @@
 
 
 
-    <!--LOCATE SECTION-->
+  <!--  <LOCATE SECTION-
     <section id="locate">
         <div class="wrapper center-align">
             <form action="" class="form">
@@ -88,7 +88,7 @@
             referrerpolicy="no-referrer-when-downgrade">
            </iframe>
         </div>
-    </section>
+    </section>--> 
 
      <!--ABOUT SECTION-->
      <section id="about">
@@ -136,7 +136,23 @@
             <h3>Puckwudgie-2</h3>
         </div>
     </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFAQRYz5TBv2KbMf9IoBqY4s5830ytLUE&libraries=places"></script>
     <script src="./assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!-- Experimental taco finder section-->
+<div>
+    <h1> Welcome to taco finder</h1>
+<p>Please enter you zip below, and we will find you tacos</p>
+<form>
+  <label for="zip">Zip Code:</label>
+  <input type="text" id="address" placeholder="12345" autofocus></input>
+  <input type="button" value="Submit" onclick="codeAddress();"></input>
+</form>
+<div id="map"></div>
+<div id="text">
+</div>
+
 </body>
 </html>
