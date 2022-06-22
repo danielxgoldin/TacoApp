@@ -1,8 +1,8 @@
+
 $(document).ready(function () {
     $(".button").on("click", function() {
         var scheduleText = $(this).siblings(".form").val();
-        var timeId = $(this).parent().attr("id");
-        localStorage.setItem();
+        var timeID = $(this).parent().attr("id");
         console.log();
         });
 
@@ -13,6 +13,5 @@ $(document).ready(function () {
             });
           }
           
-          window.initMap = initMap;
-
-          map = new google.maps.Map(document.getElementById("map")
+          window.initMap = initMap();
+        });
