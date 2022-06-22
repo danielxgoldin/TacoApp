@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    // saveBtn click listener 
     $(".button").on("click", function() {
         var scheduleText = $(this).siblings(".form").val();
         var timeId = $(this).parent().attr("id");
