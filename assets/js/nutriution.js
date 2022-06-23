@@ -45,7 +45,21 @@
       console.log(response)
       for (let i = 0; i < response.hits.length; i++)
       {
-        
+        console.log("name: "+ response.hits[i].recipe.label)
+        console.log(response.hits[i].recipe.source)
+        var ul=document.getElementById("receipe")
+        var li=document.createElement("li")
+        var a=document.createElement("a")
+        a.setAttribute("href",response.hits[i].recipe.url)
+        a.innerText="Click here for receipe"
+        var h2=document.createElement("h5")
+        h2.innerText=response.hits[i].recipe.label
+        var p=document.createElement("p")
+        p.innerText=response.hits[i].recipe.source
+        li.append(h2)
+        li.append(a)
+        li.append(p)
+        ul.append(li)
       }
      
  
