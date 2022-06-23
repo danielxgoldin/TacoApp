@@ -58,11 +58,6 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-        <!--HEADER SECTION-->
-        <header>
-            <!--- <h1 class="head">Taco App</h1> --->
-                <div class="motto">
-                    <!-- <p class="deep-purple lighten-2 center-align">Find the closest and best Tacos</p> -->
     <!--HOME SECTION-->
     <section id="home">
         <div class="wrapper container center-align purple-text text-lighten-2 z-depth-9">
@@ -70,45 +65,30 @@
         </div>
     </section>
 
-
-
   <!--LOCATE SECTION-->
     <section id="locate">
         <div class="wrapper center-align">
-            <!--
-            <form action="" class="form">
-                <input type="text" name="zipcode" class="input center-align" placeholder="Enter your zipcode.">
-            </form>
-        
-            <button type="button">Tacos!</button><br>
-        -->
             <div>
                 <h1> Welcome to taco finder</h1>
-            <p>Please enter you zip below, and we will find you tacos</p>
+                <p>Please enter you zip below, and we will find you tacos</p>
             <form>
               <label for="zip">Zip Code:</label>
               <input type="text" id="address" placeholder="12345" autofocus></input>
-              <input type="button" value="Submit" onclick="codeAddress();"></input>
+              <input type="button" value="TACOS" onclick="codeAddress();"></input>
             </form>
-            <div id="map"></div>
-            <div id="text">
+                <div id="map">
+
+                </div>
+                <div id="text">
+
+                </div>
+                <ul id="receipe">
+            
+                </ul>
+                <ul id="salsa">
+            
+                </ul>
             </div>
-            <ul id="receipe">
-            
-            </ul>
-            <ul id="salsa">
-            
-            </ul>
-            <!--
-            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.999568000612!2d-117.74845968479525!3d33.65717308071515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcdd57ca7f89e5%3A0x372155cce4ef7192!2sTaco%20Bell%20HQ!5e0!3m2!1sen!2sus!4v1655667159945!5m2!1sen!2sus" 
-            width="600" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-           </iframe>
-        -->
         </div>
     </section>
 
@@ -140,6 +120,10 @@
                     <label for="comments">Enter your question:</label>
                     <input type="text" placeholder="" name="comments" id="comments" class="form-input" />
                 </form>
+                <div class="btn">
+                    <button class="submit">submit</button>
+                </div>
+                
                 <address>
                     1 Glen Bell Way<br/>
                     Irving, Ca <br/>
@@ -163,26 +147,6 @@
     <script src="./assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<!----
-<div>
-    <h1> Welcome to taco finder</h1>
-<p>Please enter you zip below, and we will find you tacos</p>
-<form>
-  <label for="zip">Zip Code:</label>
-  <input type="text" id="address" placeholder="12345" autofocus></input>
-  <input type="button" value="Submit" onclick="codeAddress();"></input>
-</form>
-<ul id="receipe">
-
-</ul>
-<ul id="salsa">
-
-</ul>
-<div id="map"></div>
-<div id="text">
-</div>
--->
-    
-
 </body>
+
 </html>
