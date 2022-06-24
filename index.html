@@ -67,10 +67,10 @@
              <div>
                 <h1 class="intro purple-text text-lighten-2 z-depth-1"> Welcome to taco finder</h1>
                 <p class="intro2 purple-text text-lighten-2 z-depth-1">Please enter you zip below, and we will find you tacos</p>
-            <form class="white-text">
+            <form onsubmit="myfunc(event)" class="white-text">
               <label for="zip" class="intro2 teal-text text-lighten-2 z-depth-1">Zip Code:</label>
               <input type="text" class="center-align white-text" id="address" placeholder="" autofocus></input>
-              <input type="button" class="tacoButton waves-effect waves-light btn" value="FIND TACOS" onclick="codeAddress();"></input>
+              <input type="submit" class="tacoButton waves-effect waves-light btn" value="Submit" onclick="codeAddress();"></input>
             </form>
                 <div id="map">
 
@@ -88,13 +88,14 @@
                 </ul>
             </div>
         </div>
+        
     </section>
 
      <!--ABOUT SECTION-->
      <section id="about">
         <div class="wrapper contact center-align">
             <p>
-                You need receipes? We got it! You need locations? We got that too!<br>Our mission is to satisfy all your taco needs
+                You need recipes? We got it! You need locations? We've got that too!<br>Our mission is to satisfy all your taco needs
             </p>
         </div>
     </section>
@@ -106,7 +107,7 @@
                 <h4>
                     Any questions or concerns?
                     <br>
-                    Dont heistate to contact us!
+                    Dont hesitate to contact us!
                 </h4>
                 <form>
                     <label for="name" class="white-text">Enter full name:</label>
@@ -141,6 +142,17 @@
             <h3>Puckwudgie-2</h3>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        function myfunc(event) {
+            event.preventDefault();
+
+            var address = document.getElementById("address").value;
+            
+            localStorage.setItem('ls_address', address);
+        }
+
+    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFAQRYz5TBv2KbMf9IoBqY4s5830ytLUE&libraries=places"></script>
     <script src="./assets/js/nutriution.js"></script>
     <script src="./assets/js/script.js"></script>
